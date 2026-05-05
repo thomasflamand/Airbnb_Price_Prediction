@@ -29,13 +29,14 @@ Target: `log(price)`. Key fix vs. original paper: MinMaxScaler is fit on the tra
 ```
 Airbnb_Price_Prediction/
 ├── Airbnb_Price_Pipeline_v4.ipynb   ← main notebook (all modules)
+├── Models
 ├── .gitignore
 └── README.md
 ```
 
-> **Note on data & model files:** The `Data/` and `Models/` directories are **not included in this repository** — raw data files exceeded GitHub's file size limits and are excluded via `.gitignore`. They must be recreated locally by following the setup instructions below. All intermediate outputs are generated automatically by the notebook and saved to Google Drive.
+> **Note on data & model files:** The `Data/` directory is **not included in this repository** — raw data files exceeded GitHub's file size limits and are excluded via `.gitignore`. It must be recreated locally by following the setup instructions below. All intermediate outputs are generated automatically by the notebook and saved to Google Drive.
 
-When fully set up, your Google Drive will contain:
+When fully set up (and after running the code), your Google Drive will contain:
 
 ```
 MyDrive/Colab Notebooks/ML_Practice/
