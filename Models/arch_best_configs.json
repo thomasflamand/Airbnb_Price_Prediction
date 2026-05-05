@@ -1,0 +1,41 @@
+{
+  "Tuned NN (Optuna)": {
+    "n_layers": 1,
+    "units_0": 164,
+    "batch_norm_0": false,
+    "dropout_0": 0.4216,
+    "lr": 0.002918,
+    "batch_size": 256
+  },
+  "LightGBM": {
+    "n_estimators": 705,
+    "learning_rate": 0.03743,
+    "num_leaves": 128,
+    "min_child_samples": 82,
+    "subsample": 0.5124,
+    "colsample_bytree": 0.7337
+  },
+  "Stacking (Ridge meta)": {
+    "Ridge": {
+      "alpha": 2.863
+    },
+    "LightGBM_1": {
+      "n_estimators": 705,
+      "learning_rate": 0.03743,
+      "num_leaves": 128,
+      "min_child_samples": 82,
+      "subsample": 0.5124,
+      "colsample_bytree": 0.7337
+    },
+    "LightGBM_2": {
+      "n_estimators": 824,
+      "learning_rate": 0.03011,
+      "num_leaves": 105,
+      "min_child_samples": 69,
+      "subsample": 0.7819,
+      "colsample_bytree": 0.7999
+    },
+    "meta_learner": "Ridge(alpha=1.0)",
+    "cv": "KFold(n_splits=5)"
+  }
+}

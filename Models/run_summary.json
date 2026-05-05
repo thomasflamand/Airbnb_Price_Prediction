@@ -1,0 +1,328 @@
+{
+  "run_timestamp": "2026-04-29T16:54:39.933067",
+  "n_lasso_features": 139,
+  "models": {
+    "Linear Baseline": {
+      "metrics": {
+        "trainval_R2": -3.207003593444824,
+        "trainval_MSE": 2.011636257171631,
+        "trainval_MAE": 0.49036988615989685,
+        "test_R2": -287882.724246402,
+        "test_MSE": 134539.32217474654,
+        "test_MAE": 17.703678744241614,
+        "best_R2_tuning": null
+      },
+      "best_params": {
+        "handle": null,
+        "verbose": false,
+        "output_type": null,
+        "algorithm": "auto",
+        "fit_intercept": true,
+        "copy_X": true
+      }
+    },
+    "Ridge": {
+      "metrics": {
+        "trainval_R2": 0.6760694980621338,
+        "trainval_MSE": 0.15489178895950317,
+        "trainval_MAE": 0.2814580798149109,
+        "test_R2": 0.6922615293093388,
+        "test_MSE": 0.14381822161775829,
+        "test_MAE": 0.272905680526727,
+        "best_R2_tuning": 0.6505009960937436
+      },
+      "best_params": {
+        "handle": null,
+        "verbose": false,
+        "output_type": null,
+        "alpha": 0.001524521262250676,
+        "fit_intercept": true,
+        "solver": "auto",
+        "copy_X": true
+      }
+    },
+    "Gradient Boosting": {
+      "metrics": {
+        "trainval_R2": 0.8542504090327258,
+        "trainval_MSE": 0.06969215904883629,
+        "trainval_MAE": 0.19177404422766203,
+        "test_R2": 0.7436681876152881,
+        "test_MSE": 0.11979387990877174,
+        "test_MAE": 0.24369273924769666,
+        "best_R2_tuning": 0.7117924002324765
+      },
+      "best_params": {
+        "objective": "reg:squarederror",
+        "base_score": null,
+        "booster": null,
+        "callbacks": null,
+        "colsample_bylevel": null,
+        "colsample_bynode": null,
+        "colsample_bytree": null,
+        "device": "cuda",
+        "early_stopping_rounds": null,
+        "enable_categorical": false,
+        "eval_metric": null,
+        "feature_types": null,
+        "feature_weights": null,
+        "gamma": null,
+        "grow_policy": null,
+        "importance_type": null,
+        "interaction_constraints": null,
+        "learning_rate": 0.16043445923408262,
+        "max_bin": null,
+        "max_cat_threshold": null,
+        "max_cat_to_onehot": null,
+        "max_delta_step": null,
+        "max_depth": 6,
+        "max_leaves": null,
+        "min_child_weight": null,
+        "missing": NaN,
+        "monotone_constraints": null,
+        "multi_strategy": null,
+        "n_estimators": 330,
+        "n_jobs": null,
+        "num_parallel_tree": null,
+        "random_state": 42,
+        "reg_alpha": null,
+        "reg_lambda": null,
+        "sampling_method": null,
+        "scale_pos_weight": null,
+        "subsample": 0.8706877077941407,
+        "tree_method": "hist",
+        "validate_parameters": null,
+        "verbosity": 0
+      }
+    },
+    "KMeans+Ridge": {
+      "metrics": {
+        "trainval_R2": 0.7044097188780277,
+        "trainval_MSE": 0.14134053309191238,
+        "trainval_MAE": 0.2686141133563467,
+        "test_R2": 0.6988504210071499,
+        "test_MSE": 0.14073897486552586,
+        "test_MAE": 0.2697778657003814,
+        "best_R2_tuning": 0.66471674901932
+      },
+      "best_params": {
+        "handle": null,
+        "verbose": false,
+        "output_type": null,
+        "n_init": "auto",
+        "oversampling_factor": 2.0,
+        "max_samples_per_batch": 32768,
+        "init": "scalable-k-means++",
+        "max_iter": 300,
+        "n_clusters": 11,
+        "random_state": 0,
+        "tol": 0.0001
+      }
+    },
+    "SVR": {
+      "metrics": {
+        "trainval_R2": 0.775059700012207,
+        "trainval_MSE": 0.10755829513072968,
+        "trainval_MAE": 0.21598520874977112,
+        "test_R2": 0.7233690549044626,
+        "test_MSE": 0.12928045843209313,
+        "test_MAE": 0.25109664498697165,
+        "best_R2_tuning": 0.6921640323874128
+      },
+      "best_params": {
+        "handle": null,
+        "verbose": false,
+        "output_type": null,
+        "kernel": "rbf",
+        "degree": 3,
+        "gamma": 0.021288759660157343,
+        "coef0": 0.0,
+        "tol": 0.001,
+        "C": 4.009938890337848,
+        "cache_size": 1024.0,
+        "max_iter": -1,
+        "nochange_steps": 1000,
+        "epsilon": 0.1
+      }
+    },
+    "Neural Network": {
+      "metrics": {
+        "trainval_R2": 0.7417874336242676,
+        "trainval_MSE": 0.12346786260604858,
+        "trainval_MAE": 0.25577449798583984,
+        "test_R2": 0.7095246182462434,
+        "test_MSE": 0.13575050507597283,
+        "test_MAE": 0.2628972812002262,
+        "best_R2_tuning": 0.6663572788238525
+      },
+      "best_params": {
+        "name": "sequential_30",
+        "trainable": true,
+        "dtype": {
+          "module": "keras",
+          "class_name": "DTypePolicy",
+          "config": {
+            "name": "float32"
+          },
+          "registered_name": null
+        },
+        "layers": [
+          {
+            "module": "keras.layers",
+            "class_name": "InputLayer",
+            "config": {
+              "batch_shape": [
+                null,
+                139
+              ],
+              "dtype": "float32",
+              "sparse": false,
+              "ragged": false,
+              "name": "input_layer_30",
+              "optional": false
+            },
+            "registered_name": null
+          },
+          {
+            "module": "keras.layers",
+            "class_name": "Dense",
+            "config": {
+              "name": "dense_90",
+              "trainable": true,
+              "dtype": {
+                "module": "keras",
+                "class_name": "DTypePolicy",
+                "config": {
+                  "name": "float32"
+                },
+                "registered_name": null
+              },
+              "units": 17,
+              "activation": "relu",
+              "use_bias": true,
+              "kernel_initializer": {
+                "module": "keras.initializers",
+                "class_name": "GlorotUniform",
+                "config": {
+                  "seed": null
+                },
+                "registered_name": null
+              },
+              "bias_initializer": {
+                "module": "keras.initializers",
+                "class_name": "Zeros",
+                "config": {},
+                "registered_name": null
+              },
+              "kernel_regularizer": null,
+              "bias_regularizer": null,
+              "kernel_constraint": null,
+              "bias_constraint": null,
+              "quantization_config": null
+            },
+            "registered_name": null,
+            "build_config": {
+              "input_shape": [
+                null,
+                139
+              ]
+            }
+          },
+          {
+            "module": "keras.layers",
+            "class_name": "Dense",
+            "config": {
+              "name": "dense_91",
+              "trainable": true,
+              "dtype": {
+                "module": "keras",
+                "class_name": "DTypePolicy",
+                "config": {
+                  "name": "float32"
+                },
+                "registered_name": null
+              },
+              "units": 27,
+              "activation": "relu",
+              "use_bias": true,
+              "kernel_initializer": {
+                "module": "keras.initializers",
+                "class_name": "GlorotUniform",
+                "config": {
+                  "seed": null
+                },
+                "registered_name": null
+              },
+              "bias_initializer": {
+                "module": "keras.initializers",
+                "class_name": "Zeros",
+                "config": {},
+                "registered_name": null
+              },
+              "kernel_regularizer": null,
+              "bias_regularizer": null,
+              "kernel_constraint": null,
+              "bias_constraint": null,
+              "quantization_config": null
+            },
+            "registered_name": null,
+            "build_config": {
+              "input_shape": [
+                null,
+                17
+              ]
+            }
+          },
+          {
+            "module": "keras.layers",
+            "class_name": "Dense",
+            "config": {
+              "name": "dense_92",
+              "trainable": true,
+              "dtype": {
+                "module": "keras",
+                "class_name": "DTypePolicy",
+                "config": {
+                  "name": "float32"
+                },
+                "registered_name": null
+              },
+              "units": 1,
+              "activation": "linear",
+              "use_bias": true,
+              "kernel_initializer": {
+                "module": "keras.initializers",
+                "class_name": "GlorotUniform",
+                "config": {
+                  "seed": null
+                },
+                "registered_name": null
+              },
+              "bias_initializer": {
+                "module": "keras.initializers",
+                "class_name": "Zeros",
+                "config": {},
+                "registered_name": null
+              },
+              "kernel_regularizer": null,
+              "bias_regularizer": null,
+              "kernel_constraint": null,
+              "bias_constraint": null,
+              "quantization_config": null
+            },
+            "registered_name": null,
+            "build_config": {
+              "input_shape": [
+                null,
+                27
+              ]
+            }
+          }
+        ],
+        "build_input_shape": [
+          null,
+          139
+        ]
+      }
+    }
+  }
+}

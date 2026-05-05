@@ -1,0 +1,4 @@
+model,R2,MAE,MSE
+Tuned NN (Optuna),0.6881,0.2697,0.1457
+LightGBM,0.7526,0.2386,0.1156
+Stacking (Ridge meta),0.754,0.2383,0.115
