@@ -3,7 +3,7 @@
 Reproduction and extension of [Rezazadeh Kalehbasti et al. (arXiv:1907.12665)](https://arxiv.org/abs/1907.12665) on the NYC Airbnb dataset.
 
 **Course:** IEOR E4579 — Machine Learning in Practice, Columbia University, Spring 2026  
-**Authors:** Thomas Flamand (`tf2636`), Yuhao Zhang (`yz5075`)
+**Authors:** Thomas Flamand (`tf2636`)
 
 ---
 
